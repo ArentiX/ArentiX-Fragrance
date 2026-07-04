@@ -170,3 +170,12 @@ function animarAlCarrito(imagen) {
         copia.remove();
     }, 900);
 }
+
+const menuCheckbox = document.getElementById("menu");
+const enlacesMenu = document.querySelectorAll(".navbar a");
+
+enlacesMenu.forEach(enlace => {
+    enlace.addEventListener("click", () => {
+        menuCheckbox.checked = false;
+    });
+});
